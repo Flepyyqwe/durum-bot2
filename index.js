@@ -12,11 +12,11 @@ client.login(process.env.Token)
     .then(async c => await console.log(`\n\n  The Bot has been Activated on:`.magenta + ` ${client.guilds.cache.size} servers `.blue + `\n  Bot Name:`.magenta + ` ${client.user.tag} \n\n`.blue));
 
 setInterval(async () => {
-    let guild = client.guilds.cache.get('1200775507545952356');
+    let guild = client.guilds.cache.get('1102973741748723882');
     if (!guild) return console.log('Guild ID\'si Belirtilmemiş'.red);
-    let role = guild.roles.cache.get('1205618415851802664');
+    let role = guild.roles.cache.get('1208149038843691058');
     if (!role) return console.log('Role ID\'si Belirtilmemiş'.red);
-    let channel = guild.channels.cache.get('1201284101584466041');
+    let channel = guild.channels.cache.get('1201870419217354812');
     if (!channel) return console.log('Kanal ID\'si Belirtilmemiş'.red);
 
     await guild.members.cache.map(async m => {
